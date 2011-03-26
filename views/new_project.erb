@@ -1,0 +1,15 @@
+<%= erb(:header, :layout => false) %>
+			<form id="new_project" method="post" action="/new_project">
+				<p>
+					<label for="project_name">Name:</label>
+					<input type="text" name="project[name]" id="project_name" />
+				</p>
+				<p>
+					<label for="project_description">Description:</label>
+					<textarea name="project[description]" id="project_description"></textarea>
+				</p>
+				<p>
+					<input type="submit" value="Add project" />
+				</p>
+			</form>
+<%= erb(:footer, :layout => false) %>

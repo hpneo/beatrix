@@ -1,0 +1,55 @@
+body{
+	background:#eeeeee;
+	font-family:'Lucida Sans';
+	margin:0;
+}
+a{
+	color:#888888;
+	text-decoration:none;
+}
+h1{
+	margin:15px 0;
+}
+h3{
+	margin:0;
+}
+#header, #body{
+	display:block;
+	width:800px;
+	margin:0 auto;
+}
+#header{
+	border-bottom:solid 3px #333333;
+	background:url('/images/list.png') no-repeat top right;
+}
+	#header h1 a:hover{
+		color:#c1002a;
+	}
+	#header a#new_project_link{
+		display:block;
+		width:15%;
+		text-align:center;
+		padding:3px;
+		margin-top:3px;
+		color:white;
+		background:#333333;
+	}
+		#header a#new_project_link:hover{
+			background:#c1002a;
+		}
+#body{}
+	#body ul#tasks, #body ul#stories{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+		#body ul#tasks li, #body ul#stories li{
+			margin:0;
+			padding:8px;
+			border-bottom:solid 1px #d8d8d8;
+		}
+	#body #project_details{
+		display:block;
+		width:600px;
+		margin:10px auto;
+	}

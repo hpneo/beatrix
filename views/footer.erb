@@ -1,0 +1,42 @@
+		</div>
+		<script src="/javascripts/models.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/javascripts/collections.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/javascripts/controllers.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/javascripts/views.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/javascripts/app.js" type="text/javascript" charset="utf-8"></script>
+		<script id="indexTmpl" type="text/x-jquery-tmpl">
+			<ul id="projects"></ul>
+		</script>
+		<script id="projectIndexTmpl" type="text/x-jquery-tmpl">
+			<li>
+				<h3><a href="#project/${project.id}">${project.name}</a></h3>
+			</li>
+		</script>
+		<script id="projectTmpl" type="text/x-jquery-tmpl">
+			<div id="project_details">
+				<h2>${get('name')}</h2>
+				<h3>Stories</h3>
+				<ul id="stories"></ul>
+			</div>
+		</script>
+		<script id="storyItemTmpl" type="text/x-jquery-tmpl">
+			<li class="story" id="story-${id}">
+				<h3><a href="#project/${project}/${id}">${name}</a></h3>
+				<em>${created_at}</em>
+			</li>
+		</script>
+		<script id="storyTmpl" type="text/x-jquery-tmpl">
+			<div id="story_details">
+				<h2>${get('name')}</h2>
+				<h3>Tasks</h3>
+				<ul id="tasks"></ul>
+			</div>
+		</script>
+		<script id="taskTmpl" type="text/x-jquery-tmpl">
+			<li class="task" id="task-${id}">
+				<h3><a href="#project/${project}/${id}">${description}</a></h3>
+				<em>${created_at}</em>
+			</li>
+		</script>
+	</body>
+</html>

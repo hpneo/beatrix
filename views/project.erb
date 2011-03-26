@@ -1,0 +1,20 @@
+<%= erb(:header, :layout => false) %>
+			<h2><%= @project.name %></h2>
+			<form id="new_task" method="post" action="<%= url_for(@project) %>/new_task">
+				<p>
+					<label for="task_description">Task:</label>
+					<input type="text" name="task[description]" id="task_description" />
+				</p>
+				<p>
+					<input type="submit" value="Add task" />
+				</p>
+			</form>
+			<ul id="tasks">
+				<% @project.tasks.each do |task| %>
+				<li class="task" id="task-<%= task.id %>">
+					<h3><%= task.description %></h3>
+					<em><%= task.created_at %></em>
+				</li>
+				<% end %>
+			</ul>
+<%= erb(:footer, :layout => false) %>
