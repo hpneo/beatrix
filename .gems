@@ -1,5 +1,4 @@
 sinatra
-sinatra/reloader
 erb
 json
 active_resource
