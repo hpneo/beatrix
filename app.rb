@@ -1,5 +1,6 @@
+require 'rubygems'
 require 'sinatra'
-#require "sinatra/reloader"
+require "sinatra/reloader"
 
 require 'erb'
 require 'json'
