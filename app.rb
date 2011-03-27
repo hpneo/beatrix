@@ -1,4 +1,6 @@
-require 'rubygems'
+$:.unshift File.dirname(__FILE__)
+
+# require 'rubygems'
 require 'sinatra'
 require "sinatra/reloader"
 
@@ -6,8 +8,7 @@ require 'erb'
 require 'json'
 
 require 'helpers'
-
-Dir.glob("models/*.rb*").each {|file| require file}
+require 'models'
 
 get '/' do
 	@projects = Project.all
