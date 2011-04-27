@@ -1,8 +1,6 @@
 var Project = Backbone.Model.extend({
 	initialize: function(){
 		var self = this;
-		this.attributes.memberships = this.attributes.memberships.memberships.membership;
-		this.attributes.memberships = this.attributes.memberships.map(function(membership){ return membership.membership; });
 		this.attributes.stories = this.attributes.stories.map(function(story){
 			story = story.story;
 			story.project = self.attributes.id;

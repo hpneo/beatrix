@@ -48,6 +48,9 @@ h3{
 			padding:8px;
 			border-bottom:solid 1px #d8d8d8;
 		}
+			#body ul#tasks li:hover{
+				background:url('/images/blood.png') no-repeat center center;
+			}
 	#body #project_details{
 		display:block;
 		width:600px;
